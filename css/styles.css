@@ -1,0 +1,71 @@
+.grid-contenedor{
+    display: grid;
+    margin: 0 15% 0 15%;
+    grid-template-rows: 100% 60% 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'uno uno uno ' 
+                      
+                         'dos tres cuatro'
+                         'dos cinco .'
+
+                        ;
+
+}
+    
+
+
+.grid-contenedor .item{
+    background-color: rgb(252, 212, 125);
+    border: 5px solid rgb(243, 172, 21);
+   
+
+}
+
+.grid-contenedor .item_1{
+    background-color: rgb(252, 212, 125);
+}
+
+.grid-contenedor .item_1{
+    grid-area: uno;
+}
+.grid-contenedor .item_2{
+    grid-area: dos;
+}
+.grid-contenedor .item_3{
+    grid-area: tres;
+}
+
+.grid-contenedor .item_4{
+    grid-area: cuatro;
+}
+
+.grid-contenedor .item_5{
+    grid-area: cinco;
+}
+
+/*sub - items */
+
+.grid-contenedor .item_1 .subitem {
+    display: grid;
+    grid-template-areas: "subUno subDos subTres";
+    grid-template-rows: 20px 20px 20px;
+    margin: 0 5% 0 5%;
+    
+    background-color: rgb(255, 254, 174); 
+    gap: 10px;
+    margin-bottom: 4px;
+   
+}
+
+.subitem_1{
+    grid-area: subUno;
+}
+
+.subitem_2{
+    grid-area: subDos;
+
+}
+.subitem_3{
+    grid-area: subTres;
+   
+}
